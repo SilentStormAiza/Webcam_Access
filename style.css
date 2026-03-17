@@ -1,0 +1,77 @@
+body{
+    font-family: Arial;
+    text-align: center;
+    background: #111;
+    color: white;
+}
+
+#game-area{
+    width: 600px;
+    height: 350px;
+    border: 2px solid white;
+    margin: 20px auto;
+    position: relative;
+    overflow: hidden;
+}
+
+.word{
+    position: absolute;
+    padding: 8px 12px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    user-select: none;
+}
+
+.threat{
+    background: gray;
+    color: white;
+}
+
+.safe{
+    background: gray;
+    color: white;
+}
+
+button{
+    padding: 10px 20px;
+    margin: 10px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+/* Add these styles at the end */
+.security-warning {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: black;
+    color: white;
+    padding: 30px;
+    border-radius: 10px;
+    z-index: 9999;
+    text-align: center;
+    border: 3px solid red;
+    max-width: 450px;
+    font-family: Arial;
+    line-height: 1.6;
+}
+
+.security-warning h2 {
+    color: red;
+    margin-top: 0;
+}
+.security-warning p {
+    margin: 5px 0;
+}
+.security-warning button {
+    background: red;
+    color: white;
+    border: none;
+    padding: 10px 30px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 15px;
+    font-size: 16px;
+}
